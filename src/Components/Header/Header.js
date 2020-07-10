@@ -4,7 +4,7 @@ import Menu from '../Menu/Menu'
 
 function Header() {
     return (
-        <header className={Styles.Header__Container, 'container'}>
+        <header className={`${Styles.Header__Container} 'container'`}>
             <Menu />
         </header>
     )

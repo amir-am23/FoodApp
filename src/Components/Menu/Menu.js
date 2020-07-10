@@ -8,10 +8,10 @@ function Menu() {
         <div className={Styles.Menu}>
             <div className={Styles.Pull__Right}>
                 <div>
-                    <a href='/'><IoIosSearch /></a>
+                    <a href='/' className={Styles.Search__Icon}><IoIosSearch /></a>
                 </div>
                 <div >
-                    <a href='/'>LogIn</a>
+                    <a href='/' className={Styles.LogIn}>LogIn</a>
                 </div>
             </div>
 
@@ -26,7 +26,7 @@ function Menu() {
             </div>
 
             <div className={Styles.pull___Left}>
-                <div style={{display:'flex',flexDirection:'column'}}>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <span className={Styles.Food}>FOOD</span>
                     <span className={Styles.Fusion}>FUSION</span>
                 </div>
