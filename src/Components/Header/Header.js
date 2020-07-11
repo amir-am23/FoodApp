@@ -1,11 +1,13 @@
 import React from 'react'
 import Styles from './Header.module.scss'
 import Menu from '../Menu/Menu'
+import MainHeader from '../Main_Header/MainHeader'
 
 function Header() {
     return (
-        <header className={`${Styles.Header__Container} 'container'`}>
+        <header className='container'>
             <Menu />
+            <MainHeader/>
         </header>
     )
 }
