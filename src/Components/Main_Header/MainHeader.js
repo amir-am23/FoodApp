@@ -4,10 +4,13 @@ import Options from '../Header__Options/HeaderOptions'
 import { IoIosArrowRoundForward } from "react-icons/io";
 // Icon Options 
 import burger from '../../images/burger.png'
+// Header Image
+import mh from '../../images/mh.png'
 
 function MainHeader() {
     return (
         <div className={Styles.Main__Header__Wrapper}>
+            {/* Left Side */}
             <div>
                 <div>
                     <div className={Styles.Title__1}>
@@ -27,7 +30,7 @@ function MainHeader() {
                     <Options imagesource={burger} />
                     <Options imagesource={burger} />
                 </div>
-                <div>
+                <div className={Styles.Main__Header__IB}>
                     <input type='text' placeholder='Enter Zip Code' className={Styles.Main__Header__Input} />
                     <button className={Styles.Main__Header__Button}>
                         <IoIosArrowRoundForward
@@ -37,6 +40,25 @@ function MainHeader() {
                                 }
                             } />
                     </button>
+                </div>
+            </div>
+
+            {/* Right Side */}
+            <div className={Styles.Image__Header}>
+                <img src={mh} width='550px' className='img-fluid' />
+                <div>
+                    <div className={Styles.off__Wrapper}> 
+                        <div className={Styles.Off__Child}>
+                            <span>30%</span>
+                            <span>Off</span>
+                        </div>
+                    </div>
+                </div>         
+            
+                <div className={Styles.circle__Under__Off}>
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </div>
