@@ -6,12 +6,16 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import burger from '../../images/burger.png'
 // Header Image
 import mh from '../../images/mh.png'
+// Svgs
+import Facebook from '../Social__media/facebook'
+import Twitter from '../Social__media/twitter'
+import Instagram from '../Social__media/instagram'
 
 function MainHeader() {
     return (
         <div className={Styles.Main__Header__Wrapper}>
             {/* Left Side */}
-            <div>
+            <div className={Styles.Left___Side}>
                 <div>
                     <div className={Styles.Title__1}>
                         <h1>The best</h1>
@@ -41,24 +45,27 @@ function MainHeader() {
                             } />
                     </button>
                 </div>
+                <div className={Styles.Social__Media}>
+                    <div><a href='/'><Facebook/></a></div>
+                    <div><a href='/'><Instagram/></a></div>
+                    <div><a href='/'><Twitter/></a></div>
+                </div>
             </div>
 
             {/* Right Side */}
             <div className={Styles.Image__Header}>
-                <img src={mh} width='550px' className='img-fluid' />
+                <img src={mh} width='550px' className='img-fluid' alt='mh' />
                 <div>
-                    <div className={Styles.off__Wrapper}> 
+                    <div className={Styles.off__Wrapper}>
                         <div className={Styles.Off__Child}>
                             <span>30%</span>
                             <span>Off</span>
                         </div>
                     </div>
-                </div>         
-            
-                <div className={Styles.circle__Under__Off}>
-                    <div>
+                </div>
 
-                    </div>
+                <div className={Styles.circle__Under__Off}>
+                    <div></div>
                 </div>
             </div>
         </div>

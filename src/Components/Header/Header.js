@@ -1,5 +1,4 @@
 import React from 'react'
-import Styles from './Header.module.scss'
 import Menu from '../Menu/Menu'
 import MainHeader from '../Main_Header/MainHeader'
 
