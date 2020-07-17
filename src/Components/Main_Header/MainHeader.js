@@ -1,15 +1,15 @@
-import React from 'react'
-import Styles from './MainHeader.module.scss'
-import Options from '../Header__Options/HeaderOptions'
+import React from "react";
+import Styles from "./MainHeader.module.scss";
+import Options from "../Header__Options/HeaderOptions";
 import { IoIosArrowRoundForward } from "react-icons/io";
-// Icon Options 
-import burger from '../../images/burger.png'
+// Icon Options
+import burger from "../../images/burger.png";
 // Header Image
-import mh from '../../images/mh.png'
+import mh from "../../images/mh.png";
 // Svgs
-import Facebook from '../Social__media/facebook'
-import Twitter from '../Social__media/twitter'
-import Instagram from '../Social__media/instagram'
+import Facebook from "../Social__media/facebook";
+import Twitter from "../Social__media/twitter";
+import Instagram from "../Social__media/instagram";
 
 function MainHeader() {
     return (
@@ -17,11 +17,13 @@ function MainHeader() {
             {/* Left Side */}
             <div className={Styles.Left___Side}>
                 <div>
-                    <div className={Styles.Title__1}>
-                        <h1>The best</h1>
-                    </div>
-                    <div className={Styles.Title__2}>
-                        <h1>delicious food</h1>
+                    <div className={Styles.Bold__Text__Header}>
+                        <div className={Styles.Title__1}>
+                            <h1>The best</h1>
+                        </div>
+                        <div className={Styles.Title__2}>
+                            <h1>delicious food</h1>
+                        </div>
                     </div>
                     <div className={Styles.Main__Header__Subtitle}>
                         <h4>That meets your need</h4>
@@ -35,26 +37,42 @@ function MainHeader() {
                     <Options imagesource={burger} />
                 </div>
                 <div className={Styles.Main__Header__IB}>
-                    <input type='text' placeholder='Enter Zip Code' className={Styles.Main__Header__Input} />
+                    <input
+                        type="text"
+                        placeholder="Enter Zip Code"
+                        className={Styles.Main__Header__Input}
+                    />
                     <button className={Styles.Main__Header__Button}>
                         <IoIosArrowRoundForward
-                            style={
-                                {
-                                    fontSize: '37px', fill: 'white'
-                                }
-                            } />
+                            style={{
+                                fontSize: "37px",
+                                fill: "white",
+                            }}
+                        />
                     </button>
                 </div>
                 <div className={Styles.Social__Media}>
-                    <div><a href='/'><Facebook/></a></div>
-                    <div><a href='/'><Instagram/></a></div>
-                    <div><a href='/'><Twitter/></a></div>
+                    <div>
+                        <a href="/">
+                            <Facebook />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/">
+                            <Instagram />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/">
+                            <Twitter />
+                        </a>
+                    </div>
                 </div>
             </div>
 
             {/* Right Side */}
             <div className={Styles.Image__Header}>
-                <img src={mh} width='550px' className='img-fluid' alt='mh' />
+                <img src={mh} width="550px" className="img-fluid" alt="mh" />
                 <div>
                     <div className={Styles.off__Wrapper}>
                         <div className={Styles.Off__Child}>
@@ -69,7 +87,7 @@ function MainHeader() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default MainHeader
+export default MainHeader;
